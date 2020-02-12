@@ -1,0 +1,139 @@
+/*
+ * Box-sizing-model
+ */
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*
+ * Responsive images
+*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+/*
+ * Cursor change on hover on Buttons
+*/
+input[type="submit"] {
+  cursor: pointer;
+}
+/*
+ * A better looking default horizontal rule
+ */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea {
+  resize: vertical;
+}
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.clearfix:after {
+  clear: both;
+}
+.clear {
+  clear: both;
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+@font-face {
+  font-family: 'wf_SegoeUILight';
+  src: url('http://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Light/latest.eot');
+  src: url('http://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Light/latest.eot?#iefix') format('embedded-opentype'), url('http://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Light/latest.woff') format('woff'), url('http://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Light/latest.ttf') format('truetype'), url('http://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Light/latest.svg#web') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.body {
+  font-family: "wf_SegoeUILight";
+}
+.news-cards .card {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 920px;
+  background-color: #fff;
+  box-shadow: 0px 0px 55px 0px #b5c4ce;
+  padding-top: 44px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  padding-left: 60px;
+}
+.news-cards .card .card__title {
+  padding-bottom: 15px;
+  font-family: "air-port";
+}
+.news-cards .card .card__title h3 {
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 700;
+}
+.news-cards .card .card__content__text-link a {
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.2s ease-in;
+}
+.news-cards .card .card__content__text-link a:hover,
+.news-cards .card .card__content__text-link a:active,
+.news-cards .card .card__content__text-link a:focus {
+  color: orange;
+  transition: 0.2s ease-in;
+}
+.news-cards .card .card__content__text-link--pb10 {
+  padding-bottom: 10px;
+}
+.news-cards .card .card__content__text-link--pb10::after {
+  content: "- 14 января 2019 года";
+  color: #545454;
+  opacity: 0.7;
+}
+.news-cards .card .card__content__text_description {
+  padding-bottom: 5px;
+  font-family: "wf_SegoeUILight";
+}
+.news-cards .card__content__img {
+  float: left;
+  height: 100%;
+}
+.news-cards .card__content__text {
+  float: right;
+  width: 425px;
+}

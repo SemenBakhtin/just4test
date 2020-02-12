@@ -1,0 +1,65 @@
+.news-cards {
+
+    .card {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 920px;
+        background-color: #fff;
+        box-shadow: 0px 0px 55px 0px rgb(181, 196, 206);
+        padding-top: 44px;
+        padding-right: 50px;
+        padding-bottom: 50px;
+        padding-left: 60px;
+
+        .card__title {
+            padding-bottom: 15px;
+            font-family: "air-port";
+    
+            h3 {
+                text-transform: uppercase;
+                font-size: 36px;
+                font-weight: 700;
+            }
+        }
+
+        .card__content__text-link {
+            a {
+                text-decoration: none;
+                text-transform: uppercase;
+                transition: 0.2s ease-in;
+                &:hover, &:active, &:focus {
+                    color: orange;
+                    transition: 0.2s ease-in;
+                } 
+            }
+        }
+
+        .card__content__text-link--pb10 {
+            padding-bottom: 10px;
+
+            &::after {
+                content: "- 14 января 2019 года";
+                color: #545454;
+                opacity: 0.7;
+            }
+        }
+
+        .card__content__text_description {
+            padding-bottom: 5px;
+            font-family: "wf_SegoeUILight";
+        }
+    }
+
+    .card__content__img {
+        float: left;
+        height: 100%;
+    }
+
+    .card__content__text {
+        float: right;
+        width: 425px;
+    }
+
+}
