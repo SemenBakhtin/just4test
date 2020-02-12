@@ -84,56 +84,115 @@ textarea {
 .body {
   font-family: "wf_SegoeUILight";
 }
-.news-cards .card {
+body {
+  background-color: #eeeeee;
+}
+.card {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 920px;
   background-color: #fff;
-  box-shadow: 0px 0px 55px 0px #b5c4ce;
-  padding-top: 44px;
-  padding-right: 50px;
-  padding-bottom: 50px;
-  padding-left: 60px;
+  box-shadow: 0px 2px 2px 0px #9b9a9a;
+  padding-top: 15px;
+  padding-right: 29px;
+  padding-bottom: 17px;
+  padding-left: 25px;
+  border-radius: 5px;
 }
-.news-cards .card .card__title {
-  padding-bottom: 15px;
+@media (min-width: 768px) {
+  .card {
+    padding-top: 30px;
+    padding-right: 58px;
+    padding-bottom: 35px;
+    padding-left: 50px;
+  }
+}
+.card .card__title {
+  color: #575757;
+  letter-spacing: 0.5px;
+  padding-bottom: 6px;
   font-family: "airport";
 }
-.news-cards .card .card__title h3 {
+.card .card__title h3 {
+  margin: 0;
+  padding: 0;
   text-transform: uppercase;
-  font-size: 36px;
-  font-weight: 700;
+  font-size: 24px;
+  font-weight: 400;
 }
-.news-cards .card .card__content__text-link a {
+@media (min-width: 1200px) {
+  .card .card__title h3 {
+    font-size: 36px;
+  }
+}
+.card .card__content__text {
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  padding-left: 0;
+}
+@media (min-width: 1200px) {
+  .card .card__content__text {
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 15px;
+  }
+}
+.card .card__content__text-link a {
+  line-height: 1;
+  font-size: 12px;
   text-decoration: none;
   text-transform: uppercase;
   transition: 0.2s ease-in;
 }
-.news-cards .card .card__content__text-link a:hover,
-.news-cards .card .card__content__text-link a:active,
-.news-cards .card .card__content__text-link a:focus {
+.card .card__content__text-link a:hover,
+.card .card__content__text-link a:active,
+.card .card__content__text-link a:focus {
   color: orange;
   transition: 0.2s ease-in;
 }
-.news-cards .card .card__content__text-link--pb10 {
-  padding-bottom: 10px;
+.card .card__content__text-link--pb10 {
+  padding-bottom: 2px;
 }
-.news-cards .card .card__content__text-link--pb10::after {
-  content: "- 14 января 2019 года";
+.card .card__content__text-link--pb10::after {
   color: #545454;
   opacity: 0.7;
+  font-size: 12px;
+  font-style: italic;
+  content: "- 05.01.14";
 }
-.news-cards .card .card__content__text_description {
-  padding-bottom: 5px;
+@media (min-width: 1200px) {
+  .card .card__content__text-link--pb10::after {
+    content: "- 5 января 2014";
+  }
+}
+.card .card__content__text_description {
+  line-height: 1.4;
+  font-size: 12px;
   font-family: "wf_SegoeUILight";
 }
-.news-cards .card__content__img {
+@media (min-width: 1078px) {
+  .card .card__content__text_description {
+    font-size: 14px;
+  }
+}
+.card__content__img {
   float: left;
   height: 100%;
 }
-.news-cards .card__content__text {
-  float: right;
-  width: 425px;
+@media (min-width: 1200px) {
+  .card__content__img {
+    padding-top: 10px;
+  }
+}
+.card__content__text {
+  float: left;
+}
+@media (min-width: 1200px) {
+  .card__content__text {
+    float: right;
+    width: 305px;
+  }
 }
